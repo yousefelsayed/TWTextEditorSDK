@@ -284,7 +284,7 @@ extension Character {
 extension UIViewController {
     
     /// Hides the keyboard when tapped around.
-    func hideKeyboardWhenTappedAround() {
+    public func hideKeyboardWhenTappedAround() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)

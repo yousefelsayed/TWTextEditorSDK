@@ -8,12 +8,12 @@
 import UIKit
 import Foundation
 
-public let fontBundle = Bundle.main
+public let fontBundle = Bundle.module
 
 public func registerFonts() {
-    _ = UIFont.registerFont(bundle: fontBundle, fontName: "DINNextLTArabic-Regular", fontExtension: "ttf")
-    _ = UIFont.registerFont(bundle: fontBundle, fontName: "DINNextLTArabic-Medium", fontExtension: "ttf")
-    _ = UIFont.registerFont(bundle: fontBundle, fontName: "DINNextLTArabic-Bold", fontExtension: "ttf")
+    _ = UIFont.registerFont(bundle: .module, fontName: "DINNextLTArabic-Regular", fontExtension: "ttf")
+    _ = UIFont.registerFont(bundle: .module, fontName: "DINNextLTArabic-Medium", fontExtension: "ttf")
+    _ = UIFont.registerFont(bundle: .module, fontName: "DINNextLTArabic-Bold", fontExtension: "ttf")
 }
 
 extension UIFont {
