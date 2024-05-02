@@ -1,4 +1,4 @@
-# Twitter-Counter
+# TwitterCounter
 Use TWTextEditor to count characters in a tweet
 
 <p align="row">
