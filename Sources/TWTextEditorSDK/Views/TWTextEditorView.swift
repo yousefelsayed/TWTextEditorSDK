@@ -28,7 +28,7 @@ public class TWTextEditorView: UIView {
     
     public var placeholderLabel: UILabel! // Label for the placeholder text
     public var maxCountOfCharacters: Int = 280 // Maximum number of characters allowed
-    public var typedCharactersCount: Int { twTextEditor?.lengthOf(tweet: self.text) ?? 0 } // Typed characters count
+    public var typedCharactersCount: Int { twTextEditor?.countTwitterCharacters(self.text) ?? 0 } // Typed characters count
     public var remainingCharactersCount: Int { maxCountOfCharacters - typedCharactersCount } // Remaining characters count
     
     private var text: String { return self.textView.text ?? "" } // Text in the text view
